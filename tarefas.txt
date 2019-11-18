@@ -1,0 +1,39 @@
+A-FAZER:
+ * substituir o comando ``print`` pela função ``print``
+	PADRAO			    CADEIA DE SUBSTITUIÇÃO
+	print ([^(].*)$		print (\1) /g
+	print$			    print ()
+	print \((.*),\)$	print (\1, end="")
+	comando print       função print
+	comando print       chamada da função print
+	
+ * Complementar o parágrafo do capítulo 6 que fala do argumento padrão do parâmetro *end* da função print
+ * Tirar o print da lista de palavras reservadas
+ * Atualizar a lista de palavras reservadas	
+ * substituir o retorno da função type de <type 'str'> para <class 'str'>
+ * Substituições corretivas:
+	PADRAO			    CADEIA DE SUBSTITUIÇÃO
+	<type 'string'>     <class 'str'>
+
+ * verificar onde há o operador / para divisão inteira e para divisão real
+ * Em alguns locais o delimitador de cadeia de caracteres está a interrogação (?) em vez das aspas duplas (").
+   Tal problema foi encontrado nos capítulos 11 e 14.
+	PADRAO			    CADEIA DE SUBSTITUIÇÃO   
+    [?]([^ ][^?]*)[?]   "\1"
+    
+ * substituir input por float(input( ou int(input(
+ * substituir raw_input por input
+ * Ver a questão da seção de inteiros longos (removê-la)
+ * Ver a nova sintaxe para lançamento de exceções
+ * Ver a questão de 2(dois) ou 4(quatro) espaços na endentação de blocos do capítulo 3 e dos demais capítulos
+ * Atualizar as string formats para o novo formato
+ * Substituir "0" ou "1" em resultado de expressões lógicas para "False" ou "True"
+ * Valeria a pena falar das funções float, bool (tipos primitivos da linguagem)?
+ * Revisar o capítulo de dicionário (remover o método has_key)
+ * Substituir:
+    verdadeiro (1)  por verdadeiro (True)
+    falso (0)   por falso (False)
+ * Substituir range() por list(range())
+ * Rever capítulo 3: 3.3 Coerção entre tipos
+ * Capítulo 13 tem trechos em Inglês
+
