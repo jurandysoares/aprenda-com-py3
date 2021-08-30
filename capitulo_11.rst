@@ -115,9 +115,9 @@ O método ``readline`` lê todos os caracteres até, e incluindo, o próximo car
 readlines retorna todas as linhas restantes como uma lista de strings::
 
   >>> print (f.readlines())
-  ['linha dois\012', 'linha três\012']
+  ['linha dois\n', 'linha três\n']
 
-Neste caso, a saída está em formado de lista, o que significa que as strings aparecem entre aspas e o caractere de nova linha aparece como a seqüência de escape ``012``.
+Neste caso, a saída está em formado de lista, o que significa que as strings aparecem entre aspas e o caractere de nova linha aparece como a seqüência de escape ``\n``.
 
 No fim do arquivo, ``readline`` retorna a string vazia e ``readlines`` retorna a lista vazia::
 
